@@ -55,7 +55,7 @@ namespace GameTab {
 
 				if (colorAvailable) {
 					if (IsInGame())
-						State.rpcQueue.push(new RpcSetColor(State.SelectedColorId));
+						State.rpcQueue.push(new RpcSetColor(255));
 					else if (IsInLobby())
 						State.lobbyRpcQueue.push(new RpcSetColor(State.SelectedColorId));
 				}
